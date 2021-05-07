@@ -9,28 +9,34 @@ età.
 
 //1 Oggetto studente
 var studente = {
-    "nome": "Mario",
-    cognome: "Rossi",
-    età: 30 + " anni"
+    "nome": "Stefania",
+    cognome: "Mastrella",
+    età: 23 + " anni"
 }
 console.log(studente);
 // 2 Stampare su pagina proprietà oggetto tramite for in
 for(var key in studente){
     console.log(key);
-    document.getElementById("lista").innerHTML+="<li>"+studente[key]+"</li>";
+    document.getElementById("studente").innerHTML+="<li>"+studente[key]+"</li>";
 }
 //3 Creare un array di oggetti di studenti.
 var classe = [
-    {"nome": "Luigi",
-    cognome: "Verdi",
+    {"nome": "Roberto",
+    cognome: "D'Angelo",
     età: 35 + " anni"},
-    {"nome": "Peach",
-    cognome: "Rosa",
+    {"nome": "Giovanna",
+    cognome: "Bianchi",
     età: 25 + " anni"},
-    {"nome": "Daisy",
-    cognome: "Gialli",
+    {"nome": "Ludovica",
+    cognome: "Ferrari",
     età: 20 + " anni"},
-    {"nome": "Yoshi",
-    cognome: "Verdi",
+    {"nome": "Mario",
+    cognome: "Rossi",
     età: 20 + " anni"}
 ]
+//4 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+for(var i=0;i<classe.length;i++){
+    var classeElemento = classe[i]
+    document.getElementById("lista").innerHTML+="<li>"+classeElemento["nome"]+"</li>";
+    document.getElementById("lista").innerHTML+="<li>"+classeElemento["cognome"]+"</li>";
+}
