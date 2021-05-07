@@ -51,8 +51,8 @@ console.log(classe);
 //Ciclo spostato alla fine, dopo il punto 5, così anche il nuovo studente è visibile sulla pagina
 for(var i=0;i<classe.length;i++){
     var classeElemento = classe[i]
-    document.getElementById("lista").innerHTML+="<li>"+classeElemento["nome"]+"</li>";
-    document.getElementById("lista").innerHTML+="<li>"+classeElemento["cognome"]+"</li>";
+    document.getElementById("lista").innerHTML+="<li>"+"Nome: "+classeElemento["nome"]+"</li>";
+    document.getElementById("lista").innerHTML+="<li class='cognome'>"+"Cognome: "+classeElemento["cognome"]+"</li>";
 }
 
 
